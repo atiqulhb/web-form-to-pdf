@@ -28,11 +28,71 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus {
+  outline: none;
+}
+
+.app-layout {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.app-layout > div:nth-child(1) {
+  width:100%;
+  height: 50px;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.app-layout > div:nth-child(2) {
+  display: flex;
+}
+
+.app-layout > div:nth-child(2) > div {
+  /* flex: 1 */
+  /* transition: all .3s cubic-bezier(0.55, 0.085, 0.68, 0.53); */
+}
+
+.app-layout > div:nth-child(2) > div:first-child {
+  padding: 75px;
+}
+
+.app-layout > div:nth-child(2) > div:last-child {
+  height: 600px;
+  background-color: aquamarine;
+  display: none;
+}
+
+.app-layout > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed ;
+  margin: 5px;
+}
+
+table th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table td input {
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: deepskyblue
 }
